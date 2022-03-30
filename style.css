@@ -37,7 +37,40 @@ body {
   z-index: 1;
 }
 .card .faq {
-  width: 20rem;
-  padding: 2rem 2rem 2rem 0;
+  width: 22rem;
+  padding: 2rem 5rem 2rem 0;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #787887;
+}
+.card .faq hr {
+  background-color: #e7e7e9;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.card .faq h1 {
+  font-size: 2rem;
+  color: #1d1e35;
+}
+.card .faq .accordion-block {
+  overflow: hidden;
+}
+.card .faq .accordion-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .faq .accordion-question img {
+  margin-right: 1rem;
+}
+.card .faq .accordion-answer {
+  height: 0;
+}
+.card .faq .accordion-answer p {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
