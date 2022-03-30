@@ -28,3 +28,39 @@ body {
   align-items: center;
   background: linear-gradient(to top, $SoftBlue, $SoftViolet);
 }
+
+.card {
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  position: relative;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 77%;
+  background-position: -190% 70%;
+
+  .image {
+    overflow: hidden;
+    padding: 4rem 0;
+
+    img {
+      transform: translateX(-80px);
+    }
+  }
+
+  .box {
+    position: absolute;
+    left: -95px;
+    transform: translateY(-22%);
+    top: 50%;
+    z-index: 1;
+  }
+
+  .faq {
+    width: 20rem;
+    padding: 2rem 2rem 2rem 0;
+    margin: 0 auto;
+    h1 {
+    }
+  }
+}

@@ -10,4 +10,34 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to top, #6565e7, #af67e9);
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border-radius: 15px;
+  position: relative;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 77%;
+  background-position: -190% 70%;
+}
+.card .image {
+  overflow: hidden;
+  padding: 4rem 0;
+}
+.card .image img {
+  transform: translateX(-80px);
+}
+.card .box {
+  position: absolute;
+  left: -95px;
+  transform: translateY(-22%);
+  top: 50%;
+  z-index: 1;
+}
+.card .faq {
+  width: 20rem;
+  padding: 2rem 2rem 2rem 0;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
