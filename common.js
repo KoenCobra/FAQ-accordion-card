@@ -1,7 +1,15 @@
-const blocks = document.querySelectorAll(".accordion-blocks");
+const blocks = document.querySelectorAll(".accordion-block");
 
-blocks.forEach((block) => {
-  block.addEventListener("click", function () {
-    block.classList.add(".active");
-  });
+blocks.forEach(function (block) {
+  block.addEventListener("click", openTabs);
 });
+
+function openTabs(block) {
+  var btnTarget = block.currentTarget;
+
+  blocks.forEach(function (block) {
+    block.classList.remove("active");
+  });
+
+  btnTarget.classList.add("active");
+}

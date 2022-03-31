@@ -60,6 +60,9 @@ body {
 .card .faq .accordion-block {
   overflow: hidden;
 }
+.card .faq .accordion-block:hover {
+  cursor: pointer;
+}
 .card .faq .accordion-block.active {
   overflow: visible;
 }
@@ -84,6 +87,7 @@ body {
 }
 .card .faq .accordion-answer {
   height: 0;
+  transition: all 0.2s linear;
 }
 .card .faq .accordion-answer p {
   margin-top: 0.2rem;
