@@ -9,87 +9,172 @@ body {
   font-size: 12px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top, #6565e7, #af67e9);
+  background-image: linear-gradient(to top, hsl(240deg, 73%, 65%), hsl(273deg, 75%, 66%));
 }
 
-.card {
-  background-color: white;
-  display: flex;
-  border-radius: 15px;
-  position: relative;
-  background-image: url(images/bg-pattern-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: 77%;
-  background-position: -145% 70%;
+@media (min-width: 400px) {
+  .card {
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 77%;
+    background-position: -145% 70%;
+  }
+  .card .image {
+    overflow: hidden;
+    padding: 4rem 0;
+  }
+  .card .image img {
+    transform: translateX(-80px);
+  }
+  .card .box {
+    position: absolute;
+    left: -95px;
+    transform: translateY(-22%);
+    top: 50%;
+    z-index: 1;
+  }
+  .card .faq {
+    width: 22rem;
+    padding: 2rem 5rem 2rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: hsl(240deg, 6%, 50%);
+  }
+  .card .faq hr {
+    background-color: hsl(240deg, 5%, 91%);
+    height: 1px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .card .faq h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(238deg, 29%, 16%);
+  }
+  .card .faq .accordion-block {
+    overflow: hidden;
+  }
+  .card .faq .accordion-block:hover {
+    cursor: pointer;
+  }
+  .card .faq .accordion-block.active {
+    overflow: visible;
+  }
+  .card .faq .accordion-block.active .accordion-answer {
+    height: 3rem;
+  }
+  .card .faq .accordion-block.active .accordion-question {
+    font-weight: 900;
+    color: hsl(238deg, 29%, 16%);
+  }
+  .card .faq .accordion-block.active .accordion-question img {
+    transform: rotate(180deg);
+  }
+  .card .faq .accordion-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+  }
+  .card .faq .accordion-question img {
+    margin-right: 1rem;
+  }
+  .card .faq .accordion-answer {
+    height: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .card .faq .accordion-answer p {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
 }
-.card .image {
-  overflow: hidden;
-  padding: 4rem 0;
-}
-.card .image img {
-  transform: translateX(-80px);
-}
-.card .box {
-  position: absolute;
-  left: -95px;
-  transform: translateY(-22%);
-  top: 50%;
-  z-index: 1;
-}
-.card .faq {
-  width: 22rem;
-  padding: 2rem 5rem 2rem 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #787887;
-}
-.card .faq hr {
-  background-color: #e7e7e9;
-  height: 1px;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-.card .faq h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1d1e35;
-}
-.card .faq .accordion-block {
-  overflow: hidden;
-}
-.card .faq .accordion-block:hover {
-  cursor: pointer;
-}
-.card .faq .accordion-block.active {
-  overflow: visible;
-}
-.card .faq .accordion-block.active .accordion-answer {
-  height: 3rem;
-}
-.card .faq .accordion-block.active .accordion-question {
-  font-weight: 900;
-  color: #1d1e35;
-}
-.card .faq .accordion-block.active .accordion-question img {
-  transform: rotate(180deg);
-}
-.card .faq .accordion-question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.3rem 0;
-}
-.card .faq .accordion-question img {
-  margin-right: 1rem;
-}
-.card .faq .accordion-answer {
-  height: 0;
-  transition: all 0.2s linear;
-}
-.card .faq .accordion-answer p {
-  margin-top: 0.2rem;
-  margin-bottom: 1rem;
+@media (max-width: 400px) {
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    margin: 4rem 1rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 77%;
+    background-position: center -150px;
+  }
+  .card .image {
+    position: absolute;
+    transform: translate(45px, -122px);
+  }
+  .card .image img {
+    text-align: center;
+    width: 17rem;
+  }
+  .card .box img {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    width: 115px;
+    z-index: 1;
+  }
+  .card .faq {
+    color: hsl(240deg, 6%, 50%);
+    margin-top: 6.5rem;
+    padding: 1.5rem;
+  }
+  .card .faq hr {
+    background-color: hsl(240deg, 5%, 91%);
+    height: 1px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .card .faq h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(238deg, 29%, 16%);
+    text-align: center;
+  }
+  .card .faq .accordion-block {
+    overflow: hidden;
+  }
+  .card .faq .accordion-block:hover {
+    cursor: pointer;
+  }
+  .card .faq .accordion-block.active {
+    overflow: visible;
+  }
+  .card .faq .accordion-block.active .accordion-answer {
+    height: 3rem;
+  }
+  .card .faq .accordion-block.active .accordion-question {
+    font-weight: 900;
+    color: hsl(238deg, 29%, 16%);
+  }
+  .card .faq .accordion-block.active .accordion-question img {
+    transform: rotate(180deg);
+  }
+  .card .faq .accordion-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+  }
+  .card .faq .accordion-question img {
+    margin-right: 1rem;
+  }
+  .card .faq .accordion-answer {
+    height: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .card .faq .accordion-answer p {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
