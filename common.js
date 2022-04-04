@@ -1,15 +1,11 @@
-const blocks = document.querySelectorAll(".accordion-block");
-
-blocks.forEach(function (block) {
-  block.addEventListener("click", openTabs);
-});
-
-function openTabs(block) {
-  var btnTarget = block.currentTarget;
-
-  blocks.forEach(function (block) {
-    block.classList.remove("active");
-  });
-
-  btnTarget.classList.add("active");
-}
+document.querySelectorAll(".accordion-block").forEach((box) =>
+  box.addEventListener("click", () => {
+    if (box.classList.contains("active")) box.classList.remove("active");
+    else {
+      document
+        .querySelectorAll(".accordion-block")
+        .forEach((box) => box.classList.remove("active"));
+      box.classList.add("active");
+    }
+  })
+);

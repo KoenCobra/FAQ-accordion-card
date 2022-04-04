@@ -90,8 +90,8 @@ body {
         cursor: pointer;
       }
 
+
       &.active {
-        overflow: visible;
 
         .accordion-answer {
           height: 3rem;
@@ -106,25 +106,25 @@ body {
           }
         }
       }
-    }
-
-    .accordion-question {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.3rem 0;
-
-      img {
-        margin-right: 1rem;
+      
+      .accordion-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem 0;
+        
+        img {
+          margin-right: 1rem;
+        }
       }
-    }
-
-    .accordion-answer {
-      height: 0;
-      transition: all 0.4s ease-in-out;
-      p {
-        margin-top: 0.2rem;
-        margin-bottom: 1rem;
+      
+      .accordion-answer {
+        height: 0;
+        transition: all 0.4s ease-in-out;
+        p {
+          margin-top: 0.2rem;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
@@ -189,7 +189,6 @@ z-index: 1;
         }
     
         &.active {
-          overflow: visible;
     
           .accordion-answer {
             height: 3rem;

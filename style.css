@@ -64,9 +64,6 @@ body {
   .card .faq .accordion-block:hover {
     cursor: pointer;
   }
-  .card .faq .accordion-block.active {
-    overflow: visible;
-  }
   .card .faq .accordion-block.active .accordion-answer {
     height: 3rem;
   }
@@ -77,20 +74,20 @@ body {
   .card .faq .accordion-block.active .accordion-question img {
     transform: rotate(180deg);
   }
-  .card .faq .accordion-question {
+  .card .faq .accordion-block .accordion-question {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.3rem 0;
   }
-  .card .faq .accordion-question img {
+  .card .faq .accordion-block .accordion-question img {
     margin-right: 1rem;
   }
-  .card .faq .accordion-answer {
+  .card .faq .accordion-block .accordion-answer {
     height: 0;
     transition: all 0.4s ease-in-out;
   }
-  .card .faq .accordion-answer p {
+  .card .faq .accordion-block .accordion-answer p {
     margin-top: 0.2rem;
     margin-bottom: 1rem;
   }
@@ -146,9 +143,6 @@ body {
   }
   .card .faq .accordion-block:hover {
     cursor: pointer;
-  }
-  .card .faq .accordion-block.active {
-    overflow: visible;
   }
   .card .faq .accordion-block.active .accordion-answer {
     height: 3rem;
